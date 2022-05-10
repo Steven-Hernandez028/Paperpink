@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(236, 229, 221);
+}
+
+:root {
+    --background: rgba(0, 0, 0, .4);
+    --font-menu: 'Work Sans', sans-serif;
+    --font-button: 'Lato', serif;
+    --font-logo: 'Noto Serif Display', serif;
+    --font-paragraph: 'Work Sans', sans-serif;
+    --logo-color: rgb(201, 134, 204);
+    --titulo-color: rgba(245, 203, 227, 0.93);
+}
+
+
+.container {
+    width: 100%;
+    height: 430vh;
+    z-index: 100;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 15rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: var(--font-paragraph);
+    font-size: 1.6rem;
+    color: #a7a7a7;
+}
+
+.social-list a {
+    margin: 0 2rem;
+}
+
+.social-list i {
+    font-size: 2rem;
+    color: #a7a7a7;
+}
+
+.scroll-btn {
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #e2b646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+
+}
+
+
+
+@media(max-width: 1500px) {
+   
+
+    .card {
+        width: 34rem;
+    }
+
+    .content-wrapper {
+        width: 80%;
+        height: 65rem;
+    }
+
+    .footer-content {
+        width: 80%;
+    }
+}
+
+
+
+@media(max-width: 1300px) {
+    .team {
+        padding-bottom: 5rem;
+
+    }
+
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+
+
+    }
+
+    .card {
+        margin-bottom: 8rem;
+    }
+
+    .contact-wrapper {
+        width: 90%;
+        height: 55rem;
+
+    }
+
+    .contact-heading {
+        margin-bottom: 2rem;
+    }
+
+    .field {
+        margin: 2rem 0;
+    }
+
+
+}
+
+@media(max-width: 1000px) {
+
+    .banner h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .banner p {
+        font-size: 2.5rem;
+    }
+
+    .banner button {
+        width: 18rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+
+    .services {
+        width: 40rem;
+        margin-bottom: 6rem;
+    }
+
+    .about-us-img-wrapper {
+        width: 40rem;
+    }
+
+    .about-us-img-wrapper img {
+        width: 100%;
+    }
+
+    .contact-left {
+        width: 0;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    .field {
+        width: 55rem;
+
+    }
+
+    .input-group textarea {
+        max-width: 55rem;
+    }
+
+    .submit-btn {
+        width: 55rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .copyright {
+        order: 1;
+        margin-top: 3rem;
+    }
+
+
+}
+
+@media(max-width:700px) {
+    .banner h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .banner p {
+        font-size: 2rem;
+    }
+
+    .field {
+        width: 35rem;
+    }
+
+    .input-group textarea {
+        max-width: 35rem;
+    }
+
+    .submit-btn {
+        width: 35rem;
+    }
+
+
+}
+
+
+@media(max-width: 500px) {
+    html {
+        font-size: 45%
+    }
+
+    .sidebar {
+        width: 100%;
+        right: -100%;
+    }
+
+    .change .hamburger-menu {
+        right: 38rem;
+    }
+
+    .services {
+        width: 30rem;
+    }
+
+    .footer {
+        height: 38rem;
+    }
+}
