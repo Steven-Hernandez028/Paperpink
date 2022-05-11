@@ -9,14 +9,16 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" type="ïmage/x-icon" href="/Resources/favicon.ico">
+    <link rel="stylesheet" href="Styles/contacto.css">
     <link rel="stylesheet" href="Styles/normalize.css">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/nosotros.css">
     <link rel="stylesheet" href="Styles/productos.css">
-    <link rel="stylesheet" href="Styles/contacto.css">
-    
+
     <link rel="stylesheet" href="Styles/style.css">
+
+
     <title>PaperPink</title>
 </head>
 
@@ -24,17 +26,55 @@
     <div class="container flex">
         <!--Header-->
 
+   <div class="hamburger-menu" id="hamburger-visible">
+                    <div class="line Line-1"></div>
+                    <div class="line Line-2"></div>
+                    <div class="line Line-3"></div>
+                    <span>Close</span>
+                </div>
+
         <header id="inicio" class="container-header flex">
-   
 
-            
-            <div class="logo-menu-links flex">
 
-                <div class="logo">
+
+           
+            <div class="logo-menu-links-flex">
+
+                <div class="logo-flex">
 
                     <h2> <a href="#incio">PaperPink</a></h2>
+
                 </div>
-                <nav class="menu-links ">
+             
+
+                <section class="sidebar">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#inicio" class="menu-link" data-content="Inicio">Inicio</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#nosotross" class="menu-link" data-content="Nosotros">Nosotros</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#producto" class="menu-link" data-content="Productos">Productos</a>
+                        </li>
+        
+                        <li class="menu-item">
+                            <a href="#contact-section" class="menu-link" data-content="Contactanos">Contactanos</a>
+                        </li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </section>
+
+
+
+
+
+                <nav class="menu-links" id="menu">
                     <a href="#inicio">Inicio</a>
                     <a href="#nosotross">Nosotros</a>
                     <a href="#producto">Productos</a>
@@ -45,7 +85,7 @@
 
             <div class="frase-button flex">
                 <h3 class="frase">
-                    Personalizacion a su imaginacion
+                   <b>Personalizacion a su imaginacion</b>
                 </h3>
 
                 <a href="#nosotross" class="menu-button">Ver mas</a>
@@ -67,11 +107,11 @@
                 <div>
                     <h2>Somos una empresa de personalizacion de papeleria, la cual establece su punto fuerte en la
                         escucha clara y precisa de los requerimientos del cliente.
-                    
-                        </h2>
+
+                    </h2>
 
                 </div>
-                
+
                 <img src="Resources/logo.png" alt="">
             </div>
 
@@ -86,7 +126,7 @@
                 <h1>Productos</h1>
             </div>
             <div class="slider-contenedor">
-                <div class="contenido-slider">
+                <div class="contenido-slider" id="contenido-slider-1">
 
                     <div class="card" data-tilt>
                         <div class="card-img-wrapper">
@@ -131,7 +171,7 @@
 
 
 
-                <div class="contenido-slider">
+                <div class="contenido-slider" >
 
                     <div class="card" data-tilt>
                         <div class="card-img-wrapper">
@@ -173,56 +213,56 @@
             </div>
         </section>
 
-     <!--productos-->
+        <!--productos-->
 
 
-     <!--Contacto-->
+        <!--Contacto-->
 
 
-        
-     <section class="contact" id="contact-section">
-        <div class="contact-wrapper">
-            <div class="contact-left">
 
+        <section class="contact" id="contact-section">
+            <div class="contact-wrapper">
+                <div class="contact-left">
+
+                </div>
+                <div class="contact-right">
+                    <h1 class="contact-heading">Contacto</h1>
+                    <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human:<input name="bot-field" /></label>
+                        </p>
+                        <div class="input-group">
+                            <input type="text" class="field" name="Nameinput">
+                            <label class="input-label">Nombre Completo</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="Email" class="field">
+                            <label class="input-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field"></textarea>
+                            <label class="message">Mensaje</label>
+                        </div>
+                        <input type="submit" class="submit-btn" value="Send">
+                    </form>
+                </div>
             </div>
-            <div class="contact-right">
-                <h1 class="contact-heading">Contacto</h1>
-                <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
-                   <input type="hidden" name="form-name" value="contact">
-                   <p class="hidden">
-                       <label>Don't fill this out if you're human:<input  name="bot-field"/></label>
-                   </p>
-                    <div class="input-group">
-                        <input type="text" class="field" name="Nameinput">
-                        <label class="input-label">Nombre Completo</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="Email" class="field">
-                        <label class="input-label">Email</label>
-                    </div>
-                    <div class="input-group">
-                        <textarea class="field"></textarea>
-                        <label class="message">Mensaje</label>
-                    </div>
-                    <input type="submit" class="submit-btn" value="Send">
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="copyright">
-                Copyright &copy;2022 Stefany Johnson - Todos los derechos reservados
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="copyright">
+                    Copyright &copy;2022 Stefany Johnson - Todos los derechos reservados
 
-            </p>
-            <div class="social-list">
-                <a href="#" ><i class="fab fa-facebook-f"></i></a>
-                <a href="#" ><i class="fab fa-instagram"></i></a>
-                <a href="#" ><i class="fab fa-twitter"></i></a>
+                </p>
+                <div class="social-list">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     </div>
 
@@ -232,7 +272,7 @@
     <script src="/Animations/tilt.js"></script>
     <script src="Animations/Myparallax.js"></script>
     <script src="Animations/Slider.js"></script>
-    <script src="Animations/holdfield.js"></script>
+    <script src="Animations/Toggle menu.js"></script>
 
 
 </body>
